@@ -1,31 +1,26 @@
-# Plantilla · Presentación de mapeo curricular
+# CompanyGame en la CUC — Mapeo curricular
 
-Plantilla HTML para la presentación que **Simuladores de Negocios Colombia** lleva a los
-directores de programa y decanos de una facultad de ciencias económicas o administrativas.
+Presentación que **Simuladores de Negocios Colombia** lleva a los directores de programa y
+decanos de la **Facultad de Ciencias Empresariales** de la **Corporación Universitaria de la
+Costa (CUC)**.
 
 No presenta un simulador: muestra, pregrado por pregrado, **qué asignaturas del plan de
 estudios pueden trabajarse hoy con un simulador CompanyGame**, con cuál y en qué semestre.
 
-Para una presentación de bienvenida de un simulador concreto (FoodCompany, BusinessGlobal…),
-la plantilla es otra: `plantilla-presentacion/`.
+**Cifras de portada**: 31 asignaturas con simulador, 18 de aplicación directa, 15 simuladores
+del catálogo, 5 pregrados (Administración de Empresas, Administración de Servicios de Salud,
+Contaduría Pública, Mercadeo y Publicidad, Negocios Internacionales).
 
----
-
-## Empezar
-
-1. Copia la carpeta y renómbrala `<universidad>-mapeo-presentacion/`.
-2. Sigue `INSTRUCCIONES.md`.
-
-El detalle completo —tokens, estructura de slides, paleta y criterio editorial— está en
+El detalle completo del análisis —incluidas las cifras que el deck no muestra— está en
 `CLAUDE.md`.
 
 ## Estructura
 
 ```
-plantilla-mapeo-curricular/
+cuc-mapeo-presentacion/
 ├── index.html            la presentación entera (HTML + CSS + JS, sin dependencias)
-├── CLAUDE.md             documento de trabajo: tokens, slides, paleta, criterio editorial
-├── INSTRUCCIONES.md      la versión corta
+├── CLAUDE.md             documento de trabajo: cifras completas, salvedades, criterio editorial
+├── mapeo-cuc.xlsx         Excel fuente del mapeo curricular
 ├── build-artifact.js     genera la versión publicable como Artifact de Claude
 └── assets/
     ├── logo-sdn.png          logo blanco (portada y cierre)
@@ -34,24 +29,25 @@ plantilla-mapeo-curricular/
     └── avatares.png          avatares de IA
 ```
 
-## Contenido — 13 slides con 5 programas (≈ 25–28 minutos)
+## Contenido — 12 slides (≈ 23–25 minutos)
 
 1. Portada y contexto
 2. Cartelera de simuladores CompanyGame · **fijo**
 3. Lo que ya se puede hacer hoy
 4. Alcance por programa
-5. **Ficha por programa** — bloque repetible, una por pregrado
-6. Asignaturas transversales · condicional
-7. Los tres modelos de uso docente (A / B / C) · **fijo**
-8. Evidencia de aprendizaje y acreditación
-9. Cierre y contacto · **fijo**
+5–9. **Ficha por programa** — una por pregrado (Adm. de Empresas, Mercadeo y Publicidad, Adm.
+   de Servicios de Salud, Negocios Internacionales, Contaduría Pública)
+10. Los tres modelos de uso docente (A / B / C) · **fijo**
+11. Evidencia de aprendizaje y acreditación
+12. Cierre y contacto · **fijo**
 
-El número total de slides depende de cuántos pregrados tenga la facultad. **La numeración y el
-contador se calculan solos**: se pueden añadir o quitar fichas sin tocar nada más.
+No hay slide de asignaturas transversales: ninguna asignatura con encaje perfecto se repite en
+los 5 programas a la vez (detalle en `CLAUDE.md`).
 
-Las **fichas por programa** son el eje de la reunión: cada una lista, con semestre y simulador,
-las asignaturas del pregrado que entran tal cual y las que entran con adaptación. Ocupan unos
-10 de los ~26 minutos y sirven además como material para enviar después.
+Las **fichas por programa** son el eje de la reunión: cada una lista, con semestre y
+simulador, las asignaturas del pregrado que entran de forma directa y las que entran como
+apoyo al curso. Ocupan unos 10 de los ~24 minutos y sirven además como material para enviar
+después.
 
 ## Cómo verla
 
